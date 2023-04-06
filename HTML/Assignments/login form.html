@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script>      
+    function login()
+	{
+		var uname = document.getElementById("username").value;
+		var pwd = document.getElementById("pwd1").value;
+		if(uname =='steeltroops_ai',pwd == '1234567')
+        {
+            alert('Welcome User.');
+                window.location = "https://www.gla.ac.in";
+        }
+        else
+        {
+            alert('Enter Correct Username or Password')
+        }
+	}
+    </script>
+</head>
+<body bgcolor="cyan">
+	<h2 align="Center">Login Form</h2>
+	<table cellspacing="2" align="center" cellpadding="8" border="0">
+	<tr>
+	<td>Enter User Name :</td>
+	<td><input type="text" placeholder="Enter username" id="username" class="tb" /></td>
+	</tr>
+	<tr>
+	<td>Enter Password :</td>
+	<td><input type="password" placeholder="Enter Password" id="pwd1" class="tb" /></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td>
+	<input type="submit" value="Login" class="btn" onclick="login()" /></td>
+	</tr>
+	</table>
+  </body>
+</html>

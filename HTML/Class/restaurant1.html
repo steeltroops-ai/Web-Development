@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisuki restaurant</title>
+    <style>
+        body{
+        background-image: url(https://www.adamsandbutler.com/app/uploads/2020/08/connor-mollison-3rkosR_Dgfg-unsplash-2000x1333.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        }
+
+        table{
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <div style="background-color:yellow"; align=center>
+    <h1>Daisuki Hotel</h1>
+    </div>
+    <div align="center">
+        <h4>Daisuki is one of Tokyo's original luxury hotels, whose frills cascade from the grandeur of the lobby to each of the en suites' Aesop amenities. Impeccably attentive staff and views of Mount Fuji add extra pizazz. Thought you recognised the hotel? Scarlett Johanssen and Bill Murray graced the hotel when filming Lost in Translation.</h4>
+    </div><br><br>
+    <table border=1 >
+        <tr >
+            <th align=center colspan=5>We have the japan's best Dishes that you can buy here.</th>
+        </tr>
+        <tr>
+            <th>S.No.</th>
+            <th>Dish name</th>
+            <th>Price Per Order</th>
+            <th>Check for adding in order</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Sushi</td>
+            <td>200 Yen</td>
+            <td align=center><input type="checkbox" onclick=display(this.value)><input type=hidden name=item3 value=20></td>
+            <td align=center><input type=text name=q_item3 id=q_item3 value=0 disabled required></td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Tokoyaki</td>
+            <td>300 Yen</td>
+            <td align=center><input type=checkbox value=item2 onclick=display(this.value)><input type=hidden name=item2 value=150></td>
+            <td align=center><input type=text name=q_item2 id=q_item2 value=0 disabled required></td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Veg Load pizza</td>
+            <td>200 Yen</td>
+            <td align=center><input type="checkbox" onclick=display(this.value)><input type=hidden name=item3 value=20></td>
+            <td align=center><input type=text name=q_item2 id=q_item2 value=0 disabled required></td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Burger</td>
+            <td>150 Yen</td>
+            <td align=center><input type="checkbox" onclick=display(this.value)><input type=hidden name=item3 value=20></td>
+            <td align=center><input type=text name=q_item2 id=q_item2 value=0 disabled required></td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>Curry Nan</td>
+            <td>500 Yen</td>
+            <td align=center><input type="checkbox" onclick=display(this.value)><input type=hidden name=item3 value=20></td>
+            <td align=center><input type=text name=q_item2 id=q_item2 value=0 disabled required></td>
+        </tr>
+    </table>
+</body>
+</html>

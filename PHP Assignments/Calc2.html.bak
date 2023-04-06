@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Claculator</title>
+<table border =1 cellspacing="4" cellpadding="4" height=100 align="center">
+
+<tr>
+<td><input type = "botton" value=0  onclick=display(this.value)> </td>
+</tr>
+<tr>
+<td><input type="button" value=9 name=nine style ="fontsize: 30px" OnCLick="Calculator.Input.value = '2' " ></td>
+<td><input type="button" value=8 name=nine style ="fontsize: 30px" OnCLick="Calculator.Input.value = '2' " ></td>
+<td><input type="button" value=7 name=nine style ="fontsize: 30px" OnCLick="Calculator.Input.value = '2' " ></td>
+<td><input type="button" value=/ name=nine style ="fontsize: 30px" OnCLick="Calculator.Input.value = '2' " ></td>
+</tr>
+<tr>
+<td><input type="button" value=8 name=nine style ="fontsize: 30px" OnCLick="Calculator.Input.value = '2' " ></td>
+</tr>
+<head>
+</html>		 

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            School Registration Form
+        </title>
+        <script type="text/javascript">
+            function validate() {
+                var x = document.forms["schoolForm"]["password"].value;
+                var y = document.forms["schoolForm"]["cpassword"].value;
+                if (x != y) {
+                    alert ("!! Password and Confirm Password doesn't match !!");
+                    return false;
+                }
+        </script>
+        <style>
+            td {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            table {
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px;
+                background-color: rgb(216, 141, 141);
+                border-spacing: 0px;
+                border-radius: 60px;
+            }
+            h1 {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+                text-align: center;
+                font-size: 40px;
+                font-weight: bold;
+                text-shadow: 0 0 10px black;
+                background-color:rgb(216, 141, 141);
+                color: white;
+            }
+            body {
+                background-size: cover;
+                background-position: center;
+                background-image: url("bg pic.jpg");
+            }
+            
+        </style>
+    </head>
+    <body>
+        <br/><br/>
+        <h1>School Registration Form</h1>
+        <br/>
+        <table>
+            <form name = "bankForm" action = "#" method = "post" onsubmit="return validate()">
+                <tr>
+                    <td>
+                        Full Name : 
+                    </td>
+                    <td>
+                        <input type = "text" name = "name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Age : 
+                    </td>
+                    <td>
+                        <input type = "number" name = "age" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender : 
+                    </td>
+                    <td>
+                        <input type="radio" id="01" name="genderSelect" value="male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" id="02" name="genderSelect" value="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Caste : 
+                    </td>
+                    <td>
+                        <select name="casteSelect" id="03" required>
+                            <option disabled selected value>---</option>
+                            <option value="general">General</option>
+                            <option value="obc">OBC</option>
+                            <option value="sc">SC</option>
+                            <option value="st">ST</option>
+                            <option value="ews">EWS</option>
+                        </select>
+                    </td>
+                <tr>
+                    <td>
+                        Mob. No. :
+                    </td>
+                    <td>
+                        <input type = "tel" name = "mobno" pattern="[0-9]{10}" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        E-mail : 
+                    </td>
+                    <td>
+                        <input type = "email" name = "email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        City :
+                    </td>
+                    <td>
+                        <select>
+                        <input type="text" name = "City" required>
+                        <option disabled selected value>---</option>
+                            <option value="Mathura">Mathura</option>
+                            <option value="ghaziabad">Ghaziabad</option>
+                            <option value="Agra">Agra</option>
+                            <option value="Prayagraj">Prayagraj</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Set Password : 
+                    </td>
+                    <td>
+                        <input type="password" name = "password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Confirm Password : 
+                    </td>
+                    <td>
+                        <input type="password" name = "cpassword" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Pincode : 
+                    </td>
+                    <td>
+                        <input type="tel" name = "pincode" pattern="[0-9]{6}" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <center>
+                        <input type = "submit" value = "Submit">
+                        <input type="reset">
+                        </center>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>
